@@ -1,0 +1,63 @@
+<meta charset="UTF-8">
+<h1>Relationship Navigator App</h1>
+
+<p>A personal relationship-insight and decision-support app that helps users understand, connect, and navigate their relationships through structured personality, behavior, and interaction data analysis.</p>
+
+<h2>Core Features</h2>
+
+<ul>
+<li><strong>Multi-framework Personality Assessments</strong>: Big Five, MBTI, Enneagram, DISC, StrengthsFinder, Values</li>
+<li><strong>Relational Frameworks</strong>: Attachment Styles, EQ, Conflict Styles, Love Languages</li>
+<li><strong>Optional Complementary Systems</strong>: Astrology, Human Design</li>
+<li><strong>Interaction Logging</strong>: ARR (Action-Reaction-Outcome) model</li>
+<li><strong>AI-Powered Predictions</strong>: Real-time advice, scenario simulation, strategy suggestions</li>
+<li><strong>Privacy-First Design</strong>: Transparent consent, local-first processing, full data ownership</li>
+</ul>
+
+<h2>Tech Stack</h2>
+
+<ul>
+<li><strong>Frontend</strong>: Flutter (cross-platform mobile)</li>
+<li><strong>Backend</strong>: Supabase (PostgreSQL + real-time features)</li>
+<li><strong>Authentication</strong>: OIDC/OAuth 2.1 (Apple, Google, Email)</li>
+<li><strong>Database</strong>: PostgreSQL with encrypted local cache</li>
+<li><strong>AI/NLP</strong>: On-device lightweight models + optional cloud functions</li>
+<li><strong>CI/CD</strong>: GitHub Actions + Fastlane</li>
+</ul>
+
+<h2>Project Structure</h2>
+
+<p><code>
+relationship-navigator/
+├── mobile/                 # Flutter app
+├── backend/               # Supabase configuration
+├── schemas/              # Database schemas
+├── docs/                 # Documentation
+├── scripts/              # Build and deployment scripts
+└── tests/                # Test suites
+</code></p>
+
+<h2>Privacy &amp; Security</h2>
+
+<ul>
+<li>Explicit consent for all data types</li>
+<li>Local-first processing where possible</li>
+<li>Full data export/deletion capabilities</li>
+<li>Platform-specific limitations respected (iOS share-only, Android optional SMS)</li>
+</ul>
+
+<h2>Development Phases</h2>
+
+<ol>
+<li><strong>Foundation</strong>: Database, auth, core models</li>
+<li><strong>Assessments</strong>: Personality frameworks and scoring</li>
+<li><strong>Profiles</strong>: Person management and scoring</li>
+<li><strong>Interactions</strong>: Logging and analysis</li>
+<li><strong>AI</strong>: Predictions and advice engine</li>
+<li><strong>Mobile</strong>: Cross-platform app development</li>
+<li><strong>Deployment</strong>: Testing, CI/CD, and release</li>
+</ol>
+
+<h2>Getting Started</h2>
+
+<p>See individual directories for setup instructions.</p>

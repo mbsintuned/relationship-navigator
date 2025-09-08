@@ -1,0 +1,380 @@
+{
+  "assessment_id": "big_five_ocean",
+  "name": "Big Five Personality Assessment (OCEAN)",
+  "version": "1.0",
+  "category": "personality",
+  "description": "The Big Five personality traits assessment measuring Openness, Conscientiousness, Extraversion, Agreeableness, and Neuroticism.",
+  "instructions": "Rate each statement based on how accurately it describes you. Use the scale from 1 (Very Inaccurate) to 5 (Very Accurate).",
+  "time_limit_minutes": 30,
+  "scoring": {
+    "dimensions": ["openness", "conscientiousness", "extraversion", "agreeableness", "neuroticism"],
+    "scale_range": [1, 5],
+    "questions_per_dimension": 10,
+    "reverse_scoring": true
+  },
+  "scale_labels": {
+    "1": "Very Inaccurate",
+    "2": "Moderately Inaccurate", 
+    "3": "Neither Accurate nor Inaccurate",
+    "4": "Moderately Accurate",
+    "5": "Very Accurate"
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "text": "I am the life of the party.",
+      "dimension": "extraversion",
+      "reverse_scored": false
+    },
+    {
+      "id": "q2", 
+      "text": "I feel little concern for others.",
+      "dimension": "agreeableness",
+      "reverse_scored": true
+    },
+    {
+      "id": "q3",
+      "text": "I am always prepared.",
+      "dimension": "conscientiousness", 
+      "reverse_scored": false
+    },
+    {
+      "id": "q4",
+      "text": "I get stressed out easily.",
+      "dimension": "neuroticism",
+      "reverse_scored": false
+    },
+    {
+      "id": "q5",
+      "text": "I have a rich vocabulary.",
+      "dimension": "openness",
+      "reverse_scored": false
+    },
+    {
+      "id": "q6",
+      "text": "I don't talk a lot.",
+      "dimension": "extraversion",
+      "reverse_scored": true
+    },
+    {
+      "id": "q7",
+      "text": "I am interested in people.",
+      "dimension": "agreeableness",
+      "reverse_scored": false
+    },
+    {
+      "id": "q8",
+      "text": "I leave my belongings around.",
+      "dimension": "conscientiousness",
+      "reverse_scored": true
+    },
+    {
+      "id": "q9",
+      "text": "I am relaxed most of the time.",
+      "dimension": "neuroticism",
+      "reverse_scored": true
+    },
+    {
+      "id": "q10",
+      "text": "I have difficulty understanding abstract ideas.",
+      "dimension": "openness",
+      "reverse_scored": true
+    },
+    {
+      "id": "q11",
+      "text": "I feel comfortable around people.",
+      "dimension": "extraversion",
+      "reverse_scored": false
+    },
+    {
+      "id": "q12",
+      "text": "I insult people.",
+      "dimension": "agreeableness",
+      "reverse_scored": true
+    },
+    {
+      "id": "q13",
+      "text": "I pay attention to details.",
+      "dimension": "conscientiousness",
+      "reverse_scored": false
+    },
+    {
+      "id": "q14",
+      "text": "I worry about things.",
+      "dimension": "neuroticism",
+      "reverse_scored": false
+    },
+    {
+      "id": "q15",
+      "text": "I have a vivid imagination.",
+      "dimension": "openness",
+      "reverse_scored": false
+    },
+    {
+      "id": "q16",
+      "text": "I keep in the background.",
+      "dimension": "extraversion",
+      "reverse_scored": true
+    },
+    {
+      "id": "q17",
+      "text": "I sympathize with others' feelings.",
+      "dimension": "agreeableness",
+      "reverse_scored": false
+    },
+    {
+      "id": "q18",
+      "text": "I make a mess of things.",
+      "dimension": "conscientiousness",
+      "reverse_scored": true
+    },
+    {
+      "id": "q19",
+      "text": "I seldom feel blue.",
+      "dimension": "neuroticism",
+      "reverse_scored": true
+    },
+    {
+      "id": "q20",
+      "text": "I am not interested in abstract ideas.",
+      "dimension": "openness",
+      "reverse_scored": true
+    },
+    {
+      "id": "q21",
+      "text": "I start conversations.",
+      "dimension": "extraversion",
+      "reverse_scored": false
+    },
+    {
+      "id": "q22",
+      "text": "I am not interested in other people's problems.",
+      "dimension": "agreeableness",
+      "reverse_scored": true
+    },
+    {
+      "id": "q23",
+      "text": "I get chores done right away.",
+      "dimension": "conscientiousness",
+      "reverse_scored": false
+    },
+    {
+      "id": "q24",
+      "text": "I am easily disturbed.",
+      "dimension": "neuroticism",
+      "reverse_scored": false
+    },
+    {
+      "id": "q25",
+      "text": "I have excellent ideas.",
+      "dimension": "openness",
+      "reverse_scored": false
+    },
+    {
+      "id": "q26",
+      "text": "I have little to say.",
+      "dimension": "extraversion",
+      "reverse_scored": true
+    },
+    {
+      "id": "q27",
+      "text": "I have a soft heart.",
+      "dimension": "agreeableness",
+      "reverse_scored": false
+    },
+    {
+      "id": "q28",
+      "text": "I often forget to put things back in their proper place.",
+      "dimension": "conscientiousness",
+      "reverse_scored": true
+    },
+    {
+      "id": "q29",
+      "text": "I get upset easily.",
+      "dimension": "neuroticism",
+      "reverse_scored": false
+    },
+    {
+      "id": "q30",
+      "text": "I do not have a good imagination.",
+      "dimension": "openness",
+      "reverse_scored": true
+    },
+    {
+      "id": "q31",
+      "text": "I talk to a lot of different people at parties.",
+      "dimension": "extraversion",
+      "reverse_scored": false
+    },
+    {
+      "id": "q32",
+      "text": "I am not really interested in others.",
+      "dimension": "agreeableness",
+      "reverse_scored": true
+    },
+    {
+      "id": "q33",
+      "text": "I like order.",
+      "dimension": "conscientiousness",
+      "reverse_scored": false
+    },
+    {
+      "id": "q34",
+      "text": "I change my mood a lot.",
+      "dimension": "neuroticism",
+      "reverse_scored": false
+    },
+    {
+      "id": "q35",
+      "text": "I am quick to understand things.",
+      "dimension": "openness",
+      "reverse_scored": false
+    },
+    {
+      "id": "q36",
+      "text": "I don't like to draw attention to myself.",
+      "dimension": "extraversion",
+      "reverse_scored": true
+    },
+    {
+      "id": "q37",
+      "text": "I take time out for others.",
+      "dimension": "agreeableness",
+      "reverse_scored": false
+    },
+    {
+      "id": "q38",
+      "text": "I shirk my duties.",
+      "dimension": "conscientiousness",
+      "reverse_scored": true
+    },
+    {
+      "id": "q39",
+      "text": "I have frequent mood swings.",
+      "dimension": "neuroticism",
+      "reverse_scored": false
+    },
+    {
+      "id": "q40",
+      "text": "I use difficult words.",
+      "dimension": "openness",
+      "reverse_scored": false
+    },
+    {
+      "id": "q41",
+      "text": "I don't mind being the center of attention.",
+      "dimension": "extraversion",
+      "reverse_scored": false
+    },
+    {
+      "id": "q42",
+      "text": "I feel others' emotions.",
+      "dimension": "agreeableness",
+      "reverse_scored": false
+    },
+    {
+      "id": "q43",
+      "text": "I follow a schedule.",
+      "dimension": "conscientiousness",
+      "reverse_scored": false
+    },
+    {
+      "id": "q44",
+      "text": "I get irritated easily.",
+      "dimension": "neuroticism",
+      "reverse_scored": false
+    },
+    {
+      "id": "q45",
+      "text": "I spend time reflecting on things.",
+      "dimension": "openness",
+      "reverse_scored": false
+    },
+    {
+      "id": "q46",
+      "text": "I am quiet around strangers.",
+      "dimension": "extraversion",
+      "reverse_scored": true
+    },
+    {
+      "id": "q47",
+      "text": "I make people feel at ease.",
+      "dimension": "agreeableness",
+      "reverse_scored": false
+    },
+    {
+      "id": "q48",
+      "text": "I am exacting in my work.",
+      "dimension": "conscientiousness",
+      "reverse_scored": false
+    },
+    {
+      "id": "q49",
+      "text": "I often feel blue.",
+      "dimension": "neuroticism",
+      "reverse_scored": false
+    },
+    {
+      "id": "q50",
+      "text": "I am full of ideas.",
+      "dimension": "openness",
+      "reverse_scored": false
+    }
+  ],
+  "interpretation_ranges": {
+    "very_low": [1.0, 2.0],
+    "low": [2.0, 2.8],
+    "average": [2.8, 3.7],
+    "high": [3.7, 4.5],
+    "very_high": [4.5, 5.0]
+  },
+  "dimension_descriptions": {
+    "openness": {
+      "name": "Openness to Experience",
+      "high": "Imaginative, curious, open to new experiences, artistic, intellectually curious",
+      "low": "Practical, conventional, prefers routine, traditional"
+    },
+    "conscientiousness": {
+      "name": "Conscientiousness", 
+      "high": "Organized, responsible, dependable, persistent, achievement-oriented",
+      "low": "Spontaneous, flexible, careless, disorganized"
+    },
+    "extraversion": {
+      "name": "Extraversion",
+      "high": "Sociable, assertive, energetic, enthusiastic, talkative",
+      "low": "Reserved, quiet, independent, prefers solitude"
+    },
+    "agreeableness": {
+      "name": "Agreeableness",
+      "high": "Cooperative, trusting, helpful, compassionate, kind",
+      "low": "Competitive, skeptical, independent, direct"
+    },
+    "neuroticism": {
+      "name": "Neuroticism",
+      "high": "Anxious, moody, emotionally unstable, sensitive to stress",
+      "low": "Calm, emotionally stable, resilient, confident"
+    }
+  },
+  "relationship_implications": {
+    "openness": {
+      "high": "Values growth, change, and new experiences in relationships. May seek partners who challenge them intellectually.",
+      "low": "Prefers stable, predictable relationships. Values tradition and shared routines."
+    },
+    "conscientiousness": {
+      "high": "Reliable partner, follows through on commitments. May have high expectations for organization.",
+      "low": "Spontaneous and flexible. May struggle with consistency in relationship maintenance."
+    },
+    "extraversion": {
+      "high": "Seeks social connection, enjoys group activities. Needs social stimulation in relationships.",
+      "low": "Values deep one-on-one connections. Prefers intimate settings over social gatherings."
+    },
+    "agreeableness": {
+      "high": "Cooperative and accommodating. May struggle with asserting needs in relationships.",
+      "low": "Direct and honest in communication. May need to work on empathy and compromise."
+    },
+    "neuroticism": {
+      "high": "May need extra emotional support. Benefits from patient, understanding partners.",
+      "low": "Emotionally stable foundation for relationships. Provides calm presence during stress."
+    }
+  }
+}

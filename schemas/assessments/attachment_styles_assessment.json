@@ -1,0 +1,344 @@
+{
+  "assessment_id": "attachment_styles",
+  "name": "Adult Attachment Styles Assessment",
+  "version": "1.0", 
+  "category": "relational",
+  "description": "Assessment of adult attachment patterns based on how you typically feel and behave in close relationships.",
+  "instructions": "Think about your close relationships (romantic partners, close friends, family). Rate how much each statement describes your typical feelings and behaviors.",
+  "time_limit_minutes": 15,
+  "scoring": {
+    "styles": ["secure", "anxious_preoccupied", "dismissive_avoidant", "fearful_avoidant"],
+    "scale_range": [1, 7],
+    "result_type": "primary_and_scores"
+  },
+  "scale_labels": {
+    "1": "Strongly Disagree",
+    "2": "Disagree",
+    "3": "Slightly Disagree", 
+    "4": "Neither Agree nor Disagree",
+    "5": "Slightly Agree",
+    "6": "Agree",
+    "7": "Strongly Agree"
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "text": "I find it relatively easy to get close to others.",
+      "style": "secure",
+      "reverse_scored": false
+    },
+    {
+      "id": "q2",
+      "text": "I worry about being abandoned by people close to me.",
+      "style": "anxious_preoccupied", 
+      "reverse_scored": false
+    },
+    {
+      "id": "q3",
+      "text": "I prefer not to show others how I feel deep down.",
+      "style": "dismissive_avoidant",
+      "reverse_scored": false
+    },
+    {
+      "id": "q4",
+      "text": "I want to be very close to others, but I worry they will hurt me.",
+      "style": "fearful_avoidant",
+      "reverse_scored": false
+    },
+    {
+      "id": "q5",
+      "text": "I am comfortable depending on others and having them depend on me.",
+      "style": "secure",
+      "reverse_scored": false
+    },
+    {
+      "id": "q6",
+      "text": "I need a lot of reassurance from my partner that they love me.",
+      "style": "anxious_preoccupied",
+      "reverse_scored": false
+    },
+    {
+      "id": "q7",
+      "text": "I find it difficult to depend on romantic partners.",
+      "style": "dismissive_avoidant",
+      "reverse_scored": false
+    },
+    {
+      "id": "q8",
+      "text": "I get nervous when anyone gets too close to me.",
+      "style": "fearful_avoidant",
+      "reverse_scored": false
+    },
+    {
+      "id": "q9",
+      "text": "I don't worry about others getting too close to me.",
+      "style": "secure",
+      "reverse_scored": false
+    },
+    {
+      "id": "q10",
+      "text": "When I don't have close relationships, I feel somewhat anxious and incomplete.",
+      "style": "anxious_preoccupied",
+      "reverse_scored": false
+    },
+    {
+      "id": "q11",
+      "text": "I get uncomfortable when people want to be very close to me emotionally.",
+      "style": "dismissive_avoidant",
+      "reverse_scored": false
+    },
+    {
+      "id": "q12",
+      "text": "I worry about others getting too close and seeing the 'real' me.",
+      "style": "fearful_avoidant",
+      "reverse_scored": false
+    },
+    {
+      "id": "q13",
+      "text": "It's easy for me to be affectionate with others.",
+      "style": "secure",
+      "reverse_scored": false
+    },
+    {
+      "id": "q14",
+      "text": "I worry that I will be hurt if I allow myself to become too close to others.",
+      "style": "anxious_preoccupied",
+      "reverse_scored": false
+    },
+    {
+      "id": "q15",
+      "text": "I prefer not to have others depend on me.",
+      "style": "dismissive_avoidant",
+      "reverse_scored": false
+    },
+    {
+      "id": "q16",
+      "text": "I find it difficult to trust others completely.",
+      "style": "fearful_avoidant",
+      "reverse_scored": false
+    },
+    {
+      "id": "q17",
+      "text": "I find it easy to trust others.",
+      "style": "secure",
+      "reverse_scored": false
+    },
+    {
+      "id": "q18",
+      "text": "I often want to merge completely with romantic partners.",
+      "style": "anxious_preoccupied",
+      "reverse_scored": false
+    },
+    {
+      "id": "q19",
+      "text": "I value my independence more than my relationships.",
+      "style": "dismissive_avoidant",
+      "reverse_scored": false
+    },
+    {
+      "id": "q20",
+      "text": "I want to get close to others, but I keep pulling back.",
+      "style": "fearful_avoidant",
+      "reverse_scored": false
+    },
+    {
+      "id": "q21",
+      "text": "I am comfortable with intimacy and closeness in relationships.",
+      "style": "secure",
+      "reverse_scored": false
+    },
+    {
+      "id": "q22",
+      "text": "I worry that partners don't really love me.",
+      "style": "anxious_preoccupied",
+      "reverse_scored": false
+    },
+    {
+      "id": "q23",
+      "text": "I don't like people getting to know me too well.",
+      "style": "dismissive_avoidant",
+      "reverse_scored": false
+    },
+    {
+      "id": "q24",
+      "text": "I am afraid of being hurt in close relationships.",
+      "style": "fearful_avoidant",
+      "reverse_scored": false
+    },
+    {
+      "id": "q25",
+      "text": "It's not difficult for me to get close to others.",
+      "style": "secure",
+      "reverse_scored": false
+    },
+    {
+      "id": "q26",
+      "text": "I sometimes feel like I chase others away with my need for closeness.",
+      "style": "anxious_preoccupied",
+      "reverse_scored": false
+    },
+    {
+      "id": "q27",
+      "text": "I am more comfortable without close emotional bonds.",
+      "style": "dismissive_avoidant",
+      "reverse_scored": false
+    },
+    {
+      "id": "q28",
+      "text": "I have mixed feelings about close relationships.",
+      "style": "fearful_avoidant",
+      "reverse_scored": false
+    },
+    {
+      "id": "q29",
+      "text": "I usually discuss my problems and concerns with others.",
+      "style": "secure",
+      "reverse_scored": false
+    },
+    {
+      "id": "q30",
+      "text": "I get anxious when people are not available when I need them.",
+      "style": "anxious_preoccupied",
+      "reverse_scored": false
+    }
+  ],
+  "interpretation_thresholds": {
+    "secure": {
+      "high": 5.5,
+      "medium": 4.5,
+      "low": 3.5
+    },
+    "anxious_preoccupied": {
+      "high": 5.0,
+      "medium": 4.0,
+      "low": 3.0  
+    },
+    "dismissive_avoidant": {
+      "high": 5.0,
+      "medium": 4.0,
+      "low": 3.0
+    },
+    "fearful_avoidant": {
+      "high": 5.0,
+      "medium": 4.0,
+      "low": 3.0
+    }
+  },
+  "style_descriptions": {
+    "secure": {
+      "name": "Secure Attachment",
+      "description": "Comfortable with intimacy and independence. Views self and others positively.",
+      "strengths": [
+        "Comfortable with closeness and independence",
+        "Effective communication in relationships", 
+        "Trusting and trustworthy",
+        "Emotionally regulated",
+        "Supportive of partner's goals"
+      ],
+      "growth_areas": [
+        "May sometimes be too trusting",
+        "Could benefit from setting clearer boundaries"
+      ],
+      "relationship_style": "Forms stable, lasting relationships with good communication and mutual support.",
+      "percentage_population": "50-60%"
+    },
+    "anxious_preoccupied": {
+      "name": "Anxious-Preoccupied Attachment", 
+      "description": "Desires close relationships but worries about partner's feelings. Views others positively but self negatively.",
+      "strengths": [
+        "Highly empathetic and caring",
+        "Deeply committed to relationships",
+        "Emotionally expressive",
+        "Notices relationship dynamics well"
+      ],
+      "growth_areas": [
+        "Work on self-soothing techniques",
+        "Develop secure sense of self-worth",
+        "Practice direct communication instead of seeking reassurance",
+        "Build independence within relationships"
+      ],
+      "relationship_style": "Seeks closeness but may become clingy or demanding. Prone to relationship anxiety.",
+      "percentage_population": "15-20%"
+    },
+    "dismissive_avoidant": {
+      "name": "Dismissive-Avoidant Attachment",
+      "description": "Values independence over relationships. Views self positively but others negatively.",
+      "strengths": [
+        "Self-reliant and independent",
+        "Doesn't get overwhelmed by emotions",
+        "Goal-focused and achievement-oriented",
+        "Provides stability in crises"
+      ],
+      "growth_areas": [
+        "Practice emotional expression and vulnerability",
+        "Work on empathy and emotional attunement",
+        "Learn to value interdependence",
+        "Develop comfort with intimacy"
+      ],
+      "relationship_style": "Maintains emotional distance. May struggle with intimacy and commitment.",
+      "percentage_population": "20-25%"
+    },
+    "fearful_avoidant": {
+      "name": "Fearful-Avoidant (Disorganized) Attachment",
+      "description": "Wants close relationships but fears being hurt. Views both self and others negatively.",
+      "strengths": [
+        "Highly perceptive of others' emotions",
+        "Resilient and adaptable",
+        "Capable of deep empathy",
+        "Often very creative and intuitive"
+      ],
+      "growth_areas": [
+        "Work on emotional regulation skills",
+        "Build self-worth and confidence",
+        "Practice staying present during conflict",
+        "Learn to trust gradually"
+      ],
+      "relationship_style": "Push-pull dynamic in relationships. Craves intimacy but fears abandonment or engulfment.",
+      "percentage_population": "10-15%"
+    }
+  },
+  "relationship_implications": {
+    "secure_with_secure": {
+      "compatibility": "excellent",
+      "description": "Highly compatible. Both partners are comfortable with intimacy and independence.",
+      "potential_challenges": ["May become complacent", "Could benefit from more growth challenges"],
+      "advice": "Continue open communication and support each other's individual growth."
+    },
+    "secure_with_anxious": {
+      "compatibility": "good", 
+      "description": "Secure partner can provide stability for anxious partner's growth.",
+      "potential_challenges": ["Anxious partner may test relationship", "Secure partner may not understand anxiety"],
+      "advice": "Patient reassurance from secure partner. Anxious partner should work on self-soothing."
+    },
+    "secure_with_avoidant": {
+      "compatibility": "moderate",
+      "description": "Secure partner can help avoidant partner become more comfortable with intimacy.",
+      "potential_challenges": ["Avoidant partner may withdraw", "Secure partner may feel rejected"],
+      "advice": "Respect avoidant partner's need for space while encouraging gradual opening."
+    },
+    "anxious_with_avoidant": {
+      "compatibility": "challenging",
+      "description": "Classic 'pursuer-distancer' dynamic. Can trigger each other's insecurities.",
+      "potential_challenges": ["Anxious pursues, avoidant withdraws", "Escalating cycle of conflict"],
+      "advice": "Both partners need individual work on attachment patterns. Professional support recommended."
+    },
+    "anxious_with_anxious": {
+      "compatibility": "moderate",
+      "description": "High emotional intensity. Can be very supportive or very volatile.",
+      "potential_challenges": ["Emotional flooding", "Codependent patterns", "High drama"],
+      "advice": "Focus on individual emotional regulation and maintaining separate identities."
+    },
+    "avoidant_with_avoidant": {
+      "compatibility": "moderate",
+      "description": "Low conflict but potentially low intimacy and connection.",
+      "potential_challenges": ["Emotional distance", "Lack of deep connection", "Parallel lives"],
+      "advice": "Make intentional efforts to increase emotional intimacy and vulnerability."
+    }
+  },
+  "therapeutic_approaches": {
+    "secure": ["Continue healthy relationship practices", "Consider couples counseling for major life transitions"],
+    "anxious_preoccupied": ["Attachment-based therapy", "Mindfulness and anxiety management", "Self-compassion work"],
+    "dismissive_avoidant": ["Emotion-focused therapy", "Vulnerability exercises", "Intimacy-building practices"],
+    "fearful_avoidant": ["Trauma-informed therapy", "EMDR if trauma history", "Dialectical Behavior Therapy skills"]
+  }
+}

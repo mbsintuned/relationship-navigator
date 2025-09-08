@@ -1,0 +1,501 @@
+<meta charset="UTF-8">
+<h1>Relationship Navigator App - Build Guide</h1>
+
+<h2>Overview</h2>
+
+<p>This is a comprehensive <strong>Relationship Navigator App</strong> that helps users understand, connect, and navigate their relationships through structured personality, behavior, and interaction data analysis.</p>
+
+<h2>🏗️ Current Build Status</h2>
+
+<h3>✅ <strong>Phase 1: Foundation &amp; Architecture - COMPLETED</strong></h3>
+
+<h4>Database &amp; Backend</h4>
+
+<ul>
+<li><strong>Complete PostgreSQL/Supabase Schema</strong> (<code>schemas/database_schema.sql</code>)
+<ul>
+<li>User management with privacy consent tracking</li>
+<li>Person profiles with relationship types</li>
+<li>Assessment framework (Big Five, MBTI, Enneagram, DISC, Attachment, EQ)</li>
+<li>Interaction logging with ARR (Action-Reaction-Outcome) model</li>
+<li>AI insights and predictions system</li>
+<li>Task management and relationship scoring</li>
+<li>Complete RLS (Row Level Security) policies</li>
+<li>Performance indexes and triggers</li>
+</ul></li>
+</ul>
+
+<h4>TypeScript Backend</h4>
+
+<ul>
+<li><strong>Complete Type Definitions</strong> (<code>backend/supabase_config.ts</code>)
+<ul>
+<li>All database table interfaces</li>
+<li>Complex nested types for assessments and scoring</li>
+<li>API response types and utilities</li>
+</ul></li>
+</ul>
+
+<h4>Assessment Framework</h4>
+
+<ul>
+<li><strong>Comprehensive Scoring Algorithms</strong> (<code>backend/assessment_scoring.ts</code>)
+<ul>
+<li>Big Five personality assessment with statistical normalization</li>
+<li>Attachment styles assessment with compatibility analysis</li>
+<li>Validation and confidence calculation utilities</li>
+<li>Relationship advice generation framework</li>
+</ul></li>
+</ul>
+
+<h4>Assessment Data</h4>
+
+<ul>
+<li><strong>Complete Assessment Definitions</strong>
+<ul>
+<li>Big Five: 50 questions with reverse scoring (<code>schemas/assessments/big_five_assessment.json</code>)</li>
+<li>Attachment Styles: 30 questions with style analysis (<code>schemas/assessments/attachment_styles_assessment.json</code>)</li>
+<li>Scientific interpretation ranges and relationship implications</li>
+</ul></li>
+</ul>
+
+<h4>Flutter Mobile App Foundation</h4>
+
+<ul>
+<li><strong>Complete Project Structure</strong> (<code>mobile/</code>)
+<ul>
+<li>Modern Flutter architecture with Riverpod state management</li>
+<li>Supabase integration for backend connectivity</li>
+<li>Comprehensive theming system with Material Design 3</li>
+<li>Custom colors, typography, and spacing systems</li>
+</ul></li>
+</ul>
+
+<h4>Core Services</h4>
+
+<ul>
+<li><p><strong>Storage Service</strong> (<code>mobile/lib/core/services/storage_service.dart</code>)</p>
+
+<ul>
+<li>Hive for structured local data</li>
+<li>SharedPreferences for simple key-value storage</li>
+<li>Assessment result caching and management</li>
+<li>Data cleanup and optimization utilities</li>
+</ul></li>
+<li><p><strong>Notification Service</strong> (<code>mobile/lib/core/services/notification_service.dart</code>)</p>
+
+<ul>
+<li>Local push notifications for insights and reminders</li>
+<li>Scheduled notifications for relationship check-ins</li>
+<li>Assessment retake reminders</li>
+<li>Daily summary notifications</li>
+</ul></li>
+</ul>
+
+<h4>UI Components</h4>
+
+<ul>
+<li><p><strong>Assessment List Screen</strong> (<code>mobile/lib/features/assessment/screens/assessment_list_screen.dart</code>)</p>
+
+<ul>
+<li>Beautiful card-based layout</li>
+<li>Assessment categorization and filtering</li>
+<li>Detailed information sheets</li>
+<li>Responsive design patterns</li>
+</ul></li>
+<li><p><strong>Shared UI Components</strong></p>
+
+<ul>
+<li>Custom cards with loading and error states</li>
+<li>Loading indicators with shimmer effects</li>
+<li>Empty states for different scenarios</li>
+<li>Comprehensive error handling</li>
+</ul></li>
+</ul>
+
+<h4>Navigation &amp; Routing</h4>
+
+<ul>
+<li><strong>Complete GoRouter Setup</strong> (<code>mobile/lib/core/router/</code>)
+<ul>
+<li>Authenticated and unauthenticated routes</li>
+<li>Bottom navigation with shell routing</li>
+<li>Deep linking support for all features</li>
+<li>Responsive navigation for tablets/desktop</li>
+</ul></li>
+</ul>
+
+<h4>Configuration &amp; Theme</h4>
+
+<ul>
+<li><p><strong>Advanced App Configuration</strong> (<code>mobile/lib/core/config/app_config.dart</code>)</p>
+
+<ul>
+<li>Environment-specific settings</li>
+<li>Feature flags and assessment configurations</li>
+<li>Privacy and security settings</li>
+<li>Platform-specific configurations</li>
+</ul></li>
+<li><p><strong>Professional Theme System</strong> (<code>mobile/lib/core/theme/app_theme.dart</code>)</p>
+
+<ul>
+<li>Material Design 3 with FlexColorScheme</li>
+<li>Custom color extensions for relationship data</li>
+<li>Comprehensive text styles and spacing</li>
+<li>Dark mode support</li>
+</ul></li>
+</ul>
+
+<h3>🚧 <strong>Phase 2: Assessment Framework - IN PROGRESS</strong></h3>
+
+<h4>What's Ready</h4>
+
+<ul>
+<li>✅ Complete assessment data models and interfaces</li>
+<li>✅ Scoring algorithms for Big Five and Attachment Styles</li>
+<li>✅ Assessment list UI with category filtering</li>
+<li>✅ Assessment details and information sheets</li>
+<li>✅ Local storage for assessment results</li>
+</ul>
+
+<h4>Next Steps</h4>
+
+<ol>
+<li><p><strong>Assessment Taking UI</strong></p>
+
+<ul>
+<li>Question display with progress tracking</li>
+<li>Response validation and saving</li>
+<li>Pause/resume functionality</li>
+<li>Results calculation and display</li>
+</ul></li>
+<li><p><strong>Results Visualization</strong></p>
+
+<ul>
+<li>Personality radar charts</li>
+<li>Attachment style explanations</li>
+<li>Comparative analysis between people</li>
+<li>Historical trend tracking</li>
+</ul></li>
+<li><p><strong>Additional Assessments</strong></p>
+
+<ul>
+<li>Enneagram implementation</li>
+<li>DISC assessment</li>
+<li>Emotional Intelligence</li>
+<li>Love Languages</li>
+</ul></li>
+</ol>
+
+<h2>🚀 Getting Started</h2>
+
+<h3>Prerequisites</h3>
+
+<ul>
+<li><strong>Flutter SDK</strong>: 3.10.0 or higher</li>
+<li><strong>Dart SDK</strong>: 3.0.0 or higher</li>
+<li><strong>PostgreSQL</strong>: For local database development</li>
+<li><strong>Supabase CLI</strong>: For backend management</li>
+<li><strong>Node.js</strong>: For TypeScript backend utilities</li>
+</ul>
+
+<h3>Setup Instructions</h3>
+
+<ol>
+<li><p><strong>Clone the Repository</strong>
+<code>bash
+git clone &lt;repository-url&gt;
+cd relationship-navigator
+</code></p></li>
+<li><p><strong>Setup Database</strong>
+```bash</p>
+
+<h1>Create a new Supabase project or use local PostgreSQL</h1>
+
+<p>psql -U postgres -d relationship<em>navigator -f schemas/database</em>schema.sql
+```</p></li>
+<li><p><strong>Configure Environment</strong>
+```bash</p>
+
+<h1>Copy environment template</h1>
+
+<p>cp mobile/.env.example mobile/.env</p>
+
+<h1>Update with your Supabase credentials</h1>
+
+<p>SUPABASE<em>URL=your-project-url
+SUPABASE</em>ANON_KEY=your-anon-key
+```</p></li>
+<li><p><strong>Install Flutter Dependencies</strong>
+<code>bash
+cd mobile
+flutter pub get
+flutter pub run build_runner build
+</code></p></li>
+<li><p><strong>Run the App</strong>
+<code>bash
+flutter run
+</code></p></li>
+</ol>
+
+<h3>Development Workflow</h3>
+
+<ol>
+<li><strong>Backend Changes</strong>: Update TypeScript interfaces and run type generation</li>
+<li><strong>Database Changes</strong>: Apply migrations and update schema</li>
+<li><strong>Frontend Changes</strong>: Use hot reload for rapid iteration</li>
+<li><strong>Testing</strong>: Run unit tests and widget tests regularly</li>
+</ol>
+
+<h2>📱 App Features Overview</h2>
+
+<h3>Core Functionality</h3>
+
+<h4><strong>Multi-Framework Assessments</strong></h4>
+
+<ul>
+<li><strong>Big Five Personality (OCEAN)</strong>: 50-question scientifically validated assessment</li>
+<li><strong>Adult Attachment Styles</strong>: Understanding relationship patterns and behaviors</li>
+<li><strong>Enneagram</strong>: Nine personality types with growth paths (planned)</li>
+<li><strong>DISC Profile</strong>: Communication and work style assessment (planned)</li>
+<li><strong>Emotional Intelligence</strong>: Four-domain EQ assessment (planned)</li>
+</ul>
+
+<h4><strong>Relationship Management</strong></h4>
+
+<ul>
+<li><strong>Person Profiles</strong>: Detailed profiles for family, friends, romantic partners</li>
+<li><strong>Daily Relationship Scores</strong>: Health, approachability, and availability tracking</li>
+<li><strong>Interaction Logging</strong>: ARR model for tracking relationship dynamics</li>
+<li><strong>Message Analysis</strong>: Optional text analysis for communication patterns</li>
+</ul>
+
+<h4><strong>AI-Powered Insights</strong></h4>
+
+<ul>
+<li><strong>Predictive Analytics</strong>: Relationship outcome predictions</li>
+<li><strong>Personalized Advice</strong>: Context-aware guidance for specific situations</li>
+<li><strong>Pattern Recognition</strong>: Identifying successful interaction patterns</li>
+<li><strong>Conflict Prevention</strong>: Early warning system for relationship issues</li>
+</ul>
+
+<h4><strong>Task Management</strong></h4>
+
+<ul>
+<li><strong>Actionable Insights</strong>: Converting advice into specific tasks</li>
+<li><strong>Relationship Reminders</strong>: Scheduled check-ins and follow-ups</li>
+<li><strong>Goal Tracking</strong>: Relationship improvement objectives</li>
+</ul>
+
+<h3>Privacy &amp; Security</h3>
+
+<ul>
+<li><strong>Privacy-First Design</strong>: Explicit consent for all data types</li>
+<li><strong>Local Processing</strong>: On-device analysis when possible</li>
+<li><strong>Data Ownership</strong>: Complete export and deletion capabilities</li>
+<li><strong>Platform Compliance</strong>: iOS share-only, Android optional permissions</li>
+</ul>
+
+<h2>🏗️ Architecture Details</h2>
+
+<h3>Database Design</h3>
+
+<p>The PostgreSQL schema includes:</p>
+
+<ul>
+<li><strong>Users &amp; Authentication</strong>: Supabase Auth integration with custom user profiles</li>
+<li><strong>Assessment Framework</strong>: Flexible system supporting multiple assessment types</li>
+<li><strong>Relationship Modeling</strong>: Complex person-to-person relationship tracking</li>
+<li><strong>Interaction Logging</strong>: Detailed event tracking with sentiment analysis</li>
+<li><strong>AI System</strong>: Insights, predictions, and learning feedback loops</li>
+</ul>
+
+<h3>Mobile App Architecture</h3>
+
+<ul>
+<li><strong>Clean Architecture</strong>: Separation of concerns with feature modules</li>
+<li><strong>State Management</strong>: Riverpod for reactive state management</li>
+<li><strong>Local Storage</strong>: Hive for complex data, SharedPreferences for settings</li>
+<li><strong>Navigation</strong>: GoRouter with nested routing and deep linking</li>
+<li><strong>Theming</strong>: Material Design 3 with extensive customization</li>
+</ul>
+
+<h3>Backend Integration</h3>
+
+<ul>
+<li><strong>Supabase</strong>: Real-time database with authentication</li>
+<li><strong>REST APIs</strong>: Type-safe API calls with error handling</li>
+<li><strong>Real-time Subscriptions</strong>: Live updates for relationship data</li>
+<li><strong>Edge Functions</strong>: Server-side processing for complex analysis</li>
+</ul>
+
+<h2>📊 Assessment System Deep Dive</h2>
+
+<h3>Big Five Personality Assessment</h3>
+
+<p><strong>Scientific Foundation</strong>: Based on decades of psychological research
+<strong>Questions</strong>: 50 items across five dimensions
+<strong>Scoring</strong>: Statistical normalization with percentile rankings
+<strong>Output</strong>: 
+- Dimension scores (1-5 scale)
+- Percentile rankings against population
+- Detailed interpretations for high/low scores
+- Relationship implications and advice</p>
+
+<h3>Attachment Styles Assessment</h3>
+
+<p><strong>Foundation</strong>: Adult attachment theory from Bowlby and Ainsworth
+<strong>Styles Measured</strong>:
+- Secure (comfortable with intimacy and independence)
+- Anxious-Preoccupied (desires closeness, fears abandonment)
+- Dismissive-Avoidant (values independence, uncomfortable with closeness)
+- Fearful-Avoidant (wants relationships but fears being hurt)</p>
+
+<p><strong>Compatibility Analysis</strong>: Automatic analysis of relationship dynamics between different attachment styles with specific advice for each pairing.</p>
+
+<h2>🔧 Development Tools</h2>
+
+<h3>Code Generation</h3>
+
+<ul>
+<li><strong>build_runner</strong>: Generates serialization and state management code</li>
+<li><strong>freezed</strong>: Immutable data classes with pattern matching</li>
+<li><strong>json_annotation</strong>: Type-safe JSON serialization</li>
+</ul>
+
+<h3>Testing Strategy</h3>
+
+<ul>
+<li><strong>Unit Tests</strong>: Core business logic and utilities</li>
+<li><strong>Widget Tests</strong>: UI component behavior</li>
+<li><strong>Integration Tests</strong>: Full user flow testing</li>
+<li><strong>Golden Tests</strong>: Visual regression testing</li>
+</ul>
+
+<h3>Deployment</h3>
+
+<ul>
+<li><strong>CI/CD Pipeline</strong>: GitHub Actions for automated testing and deployment</li>
+<li><strong>App Store Deployment</strong>: Fastlane for iOS and Android releases</li>
+<li><strong>Backend Deployment</strong>: Supabase hosting with environment management</li>
+</ul>
+
+<h2>🎯 Next Development Phases</h2>
+
+<h3><strong>Phase 3: Profile Management</strong></h3>
+
+<ul>
+<li>Person profile creation and editing</li>
+<li>Relationship type management</li>
+<li>Daily scoring interface</li>
+<li>Profile overview dashboard</li>
+</ul>
+
+<h3><strong>Phase 4: Interaction Logging</strong></h3>
+
+<ul>
+<li>Action-Reaction-Outcome logging interface</li>
+<li>Historical data visualization</li>
+<li>Pattern recognition display</li>
+<li>Message analysis integration (Android)</li>
+</ul>
+
+<h3><strong>Phase 5: AI &amp; Predictions</strong></h3>
+
+<ul>
+<li>Real-time advice engine</li>
+<li>Scenario simulation interface</li>
+<li>Feedback loop implementation</li>
+<li>Machine learning integration</li>
+</ul>
+
+<h3><strong>Phase 6: Advanced Features</strong></h3>
+
+<ul>
+<li>Astrology integration (optional)</li>
+<li>Social media analysis</li>
+<li>Advanced reporting</li>
+<li>Relationship coaching features</li>
+</ul>
+
+<h2>📈 Performance Considerations</h2>
+
+<h3>Mobile Optimization</h3>
+
+<ul>
+<li><strong>Local-First</strong>: Critical data cached locally</li>
+<li><strong>Background Sync</strong>: Efficient data synchronization</li>
+<li><strong>Battery Optimization</strong>: Minimal background processing</li>
+<li><strong>Memory Management</strong>: Efficient state management with Riverpod</li>
+</ul>
+
+<h3>Database Performance</h3>
+
+<ul>
+<li><strong>Optimized Queries</strong>: Comprehensive indexing strategy</li>
+<li><strong>Connection Pooling</strong>: Supabase connection management</li>
+<li><strong>Caching Strategy</strong>: Multi-level caching (local, CDN, database)</li>
+<li><strong>Real-time Subscriptions</strong>: Selective real-time updates</li>
+</ul>
+
+<h2>🔒 Security Implementation</h2>
+
+<h3>Data Protection</h3>
+
+<ul>
+<li><strong>Encryption</strong>: Local data encryption with Hive</li>
+<li><strong>Secure Storage</strong>: Platform keychain integration</li>
+<li><strong>Privacy Controls</strong>: Granular consent management</li>
+<li><strong>GDPR Compliance</strong>: Complete data export and deletion</li>
+</ul>
+
+<h3>Authentication</h3>
+
+<ul>
+<li><strong>Multi-Provider</strong>: Apple, Google, and email authentication</li>
+<li><strong>Session Management</strong>: Secure token handling</li>
+<li><strong>Biometric Security</strong>: Optional fingerprint/face unlock</li>
+<li><strong>Account Recovery</strong>: Secure password reset flows</li>
+</ul>
+
+<h2>📱 Platform-Specific Features</h2>
+
+<h3>iOS</h3>
+
+<ul>
+<li><strong>Share Extension</strong>: Easy data import from other apps</li>
+<li><strong>Siri Shortcuts</strong>: Voice-activated relationship queries</li>
+<li><strong>Widget Support</strong>: Relationship health on home screen</li>
+<li><strong>App Clips</strong>: Lightweight assessment sharing</li>
+</ul>
+
+<h3>Android</h3>
+
+<ul>
+<li><strong>SMS Integration</strong>: Optional message analysis (with permission)</li>
+<li><strong>Adaptive Icons</strong>: Material You icon theming</li>
+<li><strong>Shortcuts</strong>: Dynamic shortcuts for common actions</li>
+<li><strong>Background Work</strong>: Relationship reminders and insights</li>
+</ul>
+
+<h2>🎨 Design System</h2>
+
+<h3>Visual Identity</h3>
+
+<ul>
+<li><strong>Color Palette</strong>: Relationship-focused color scheme</li>
+<li><strong>Typography</strong>: Inter font family for readability</li>
+<li><strong>Icons</strong>: Comprehensive icon system</li>
+<li><strong>Illustrations</strong>: Custom relationship-themed graphics</li>
+</ul>
+
+<h3>Interaction Design</h3>
+
+<ul>
+<li><strong>Micro-interactions</strong>: Delightful animations and feedback</li>
+<li><strong>Accessibility</strong>: Full screen reader and keyboard support</li>
+<li><strong>Responsive Layout</strong>: Tablet and desktop optimization</li>
+<li><strong>Dark Mode</strong>: Complete dark theme implementation</li>
+</ul>
+
+<p>This build represents a production-ready foundation with sophisticated architecture, comprehensive features, and professional-grade implementation. The next phases will complete the user-facing features and AI capabilities to create a truly powerful relationship navigation tool.</p>
